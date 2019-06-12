@@ -4,3 +4,4 @@ uploads
 
 //files
 yarn.lock
+.env
