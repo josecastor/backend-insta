@@ -27,6 +27,8 @@ module.exports = {
 
         const post = await Post.create({ author, place, description, hashtags, image: fileName });
 
+        req.io.emit('post', post);
+        
         return res.json({ post });
     }
 }
